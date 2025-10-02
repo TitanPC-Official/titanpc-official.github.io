@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TitanPC - Optimización y soporte técnico remoto</title>
+  <link rel="icon" href="Assets/Icono.ico">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Montserrat:wght@300;400;600&display=swap">
+</head>
+<body>
+  <div class="particles" id="particles"></div>
+  
+  <div class="container">
+    <header>
+      <div class="logo">
+        <img src="Assets/Icono.ico" alt="TitanPC Logo">
+      </div>
+      <p class="subtitle">Optimización y soporte técnico remoto para tu PC</p>
+      <div class="top-right-btn">
+        <div class="gamer-carousel-container">
+          <div class="gamer-carousel">
+            <button class="carousel-arrow left" id="carousel-left"><i class="fas fa-chevron-left"></i></button>
+            <img src="Assets/ProductosGamers.jpg" alt="Producto Gamer" class="carousel-img" id="carousel-img">
+            <button class="carousel-arrow right" id="carousel-right"><i class="fas fa-chevron-right"></i></button>
+          </div>
+          <a href="javascript:void(0)" class="btn gamer-btn" id="gamer-buy-btn" data-service="COMPRAR PRODUCTOS GAMERS">COMPRAR PRODUCTOS GAMERS</a>
+        </div>
+      </div>
+    </header>
+    
+    <div class="services-grid">
+      <div class="service-card">
+        <img src="Assets/Optimización completa de PC.png" alt="Optimización completa de PC">
+        <h3 class="service-title">Optimización completa de PC</h3>
+        <p>Mejoramos el rendimiento general de tu PC eliminando archivos innecesarios y optimizando el sistema.</p>
+        <a href="https://wa.me/59893549715?text=Hola%20estoy%20interesado%20en%20este%20producto" class="btn service-btn" data-service="Optimización completa de PC">Solicitar</a>
+      </div>
+      
+      <div class="service-card">
+        <img src="Assets/Actualización de drivers.png" alt="Actualización de drivers">
+        <h3 class="service-title">Actualización de drivers</h3>
+        <p>Instalamos y configuramos los últimos controladores para todos tus dispositivos y hardware.</p>
+        <a href="https://wa.me/59893549715?text=Hola%20estoy%20interesado%20en%20este%20producto" class="btn service-btn" data-service="Actualización de drivers">Solicitar</a>
+      </div>
+      
+      <div class="service-card">
+        <img src="Assets/Mejora de rendimiento (+FPS).png" alt="Mejora de rendimiento (+FPS)">
+        <h3 class="service-title">Mejora de rendimiento (+FPS)</h3>
+        <p>Optimizamos tu equipo para obtener el máximo rendimiento en juegos y aplicaciones gráficas.</p>
+        <a href="https://wa.me/59893549715?text=Hola%20estoy%20interesado%20en%20este%20producto" class="btn service-btn" data-service="Mejora de rendimiento (+FPS)">Solicitar</a>
+      </div>
+      
+      <div class="service-card">
+        <img src="Assets/Instalación de Office.png" alt="Instalación de Office">
+        <h3 class="service-title">Instalación de Office</h3>
+        <p>Configuramos Microsoft Office y otras suites ofimáticas en tu ordenador de manera profesional.</p>
+        <a href="https://wa.me/59893549715?text=Hola%20estoy%20interesado%20en%20este%20producto" class="btn service-btn" data-service="Instalación de Office">Solicitar</a>
+      </div>
+      
+      <div class="service-card">
+        <img src="Assets/Asistencia técnica completa.png" alt="Asistencia técnica completa">
+        <h3 class="service-title">Asistencia técnica completa</h3>
+        <p>Solucionamos cualquier problema de software o configuración con asistencia remota personalizada.</p>
+        <a href="https://wa.me/59893549715?text=Hola%20estoy%20interesado%20en%20este%20producto" class="btn service-btn" data-service="Asistencia técnica completa">Solicitar</a>
+      </div>
+      
+      <div class="service-card">
+        <img src="Assets/Otro Problema.png" alt="Otro problema">
+        <h3 class="service-title">Otro problema</h3>
+        <p>¿Tienes un problema específico? Contáctanos para una solución personalizada a tu necesidad.</p>
+        <a href="https://wa.me/59893549715?text=Hola%20estoy%20interesado%20en%20este%20producto" class="btn service-btn" data-service="Otro problema">Consultar</a>
+      </div>
+    </div>
+    <!-- Testimonios -->
+    <section class="rating-section">
+      <h2>Evalúa nuestra atención / Nuestro trabajo 🙌🥹</h2>
+  <form class="rating-form" id="rating-form" autocomplete="off" action="https://formspree.io/f/xjkarele" method="POST">
+        <div class="stars" id="star-rating">
+          <span class="star" data-value="1"><i class="fa-regular fa-star"></i></span>
+          <span class="star" data-value="2"><i class="fa-regular fa-star"></i></span>
+          <span class="star" data-value="3"><i class="fa-regular fa-star"></i></span>
+          <span class="star" data-value="4"><i class="fa-regular fa-star"></i></span>
+          <span class="star" data-value="5"><i class="fa-regular fa-star"></i></span>
+        </div>
+        <input type="hidden" name="Calificación" id="rating-value" value="">
+        <textarea class="rating-comment" name="Comentario" id="rating-comment" rows="2" maxlength="120" placeholder="Deja tu comentario sobre la atención y que cosas a mejorar" required></textarea>
+        <button type="submit" class="btn rating-btn">Enviar calificación</button>
+        <div class="rating-confirm" id="rating-confirm" style="display:none;">¡Gracias por tu opinión!</div>
+      </form>
+    </section>
+    <h2>Comentarios de clientes</h2>
+    <div class="testimonial-list">
+      <div class="testimonial social-comment">
+        <div class="testimonial-icon">
+          <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Juan" />
+        </div>
+        <div class="testimonial-content">
+          <p class="testimonial-text">Me ayudaron con un virus, impresionado la verdad, ¡excelente atención!.</p>
+          <span class="testimonial-author">Lautaro · Montevideo</span>
+        </div>
+      </div>
+      <div class="testimonial social-comment">
+        <div class="testimonial-icon">
+          <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="María" />
+        </div>
+        <div class="testimonial-content">
+          <p class="testimonial-text">Muy profesionales, super economico, revivieron mi compu antigua🥹.</p>
+          <span class="testimonial-author">Kimberly · Canelones</span>
+        </div>
+      </div>
+      <div class="testimonial social-comment">
+        <div class="testimonial-icon">
+          <img src="https://randomuser.me/api/portraits/men/65.jpg" alt="Diego" />
+        </div>
+        <div class="testimonial-content">
+          <p class="testimonial-text">El servicio remoto es increible, seguro, economico y rapido, ademas compre productos gamers y es increible lo economicos que estan.</p>
+          <span class="testimonial-author">Facundo · Maldonado</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <footer>
+    <div class="container">
+      <p class="footer-text">TitanPC © 2025 – Asistencia Técnica Remota</p>
+      <div class="social-icons">
+  <a href="https://wa.me/59893549715" id="whatsapp-link" target="_blank"><i class="fab fa-whatsapp"></i></a>
+  <a href="mailto:titanpc.uy@gmail.com" id="email-link" target="_blank"><i class="fas fa-envelope"></i></a>
+  <a href="https://www.instagram.com/titanpc.uy/" id="instagram-link" target="_blank"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </footer>
+  
+  <script src="script.js" defer></script>
+</body>
+</html>
